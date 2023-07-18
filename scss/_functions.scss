@@ -3,3 +3,8 @@ $basePx: 16px;
 @function px-to-rem($pixels) {
     @return $pixels / $basePx * 1rem;
 }
+
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
