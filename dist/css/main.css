@@ -1,0 +1,22 @@
+@import url("https://p.typekit.net/p.css?s=1&k=wwy4bxt&ht=tk&f=27989.27998.28028.28056&a=54488276&app=typekit&e=css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "paralucent";
+  src: url("https://use.typekit.net/af/1a7bb3/00000000000000007735f0ce/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff2"), url("https://use.typekit.net/af/1a7bb3/00000000000000007735f0ce/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("woff"), url("https://use.typekit.net/af/1a7bb3/00000000000000007735f0ce/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i2&v=3") format("opentype");
+  font-display: auto;
+  font-style: italic;
+  font-weight: 200;
+  font-stretch: normal;
+}
+.tk-paralucent {
+  font-family: "paralucent", sans-serif;
+}
+
+header h3 {
+  font-family: "paralucent";
+}/*# sourceMappingURL=main.css.map */
