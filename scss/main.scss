@@ -597,137 +597,17 @@
     // ======================================================= MEDIA QUERIES ================================================//
 
 
-    // @include xs {
-
-    // }
-
-    // @include sm {
-    //     .fContainer__social-icons {
-    //        margin-left: 30%;
-    //     }
-    //     .menu-btn {
-    //         margin-left: 3%;
-    //     }
-        
-    //     .references__input {
-    //         margin-right: 8%;
-    //         margin-left: 8%;
-    //     }
-    // }
-
-    // .references {
-        
-    // }
-
-    //  @include sms {
-    //     .fContainer__social-icons {
-    //         margin-left: 50%;
-    //     }
-    // }
-
-    // @include md {
-    //     //MENU BTN
-    //     .posts {
-    //         h3 {
-    //             margin: 6% 0% 5% 4%;
-    //         }
-    //     }
-    //     .menu-btn {
-    //         margin-left: 7%;
-    //     }
-        
-    //     //navigation
-
-    //     .nav {
-       
-    //         &.open {
-    //            a{
-    //             bottom: 100px;
-    //            }
-    //         }
-    //     }
-
-    //     .menu-nav {
-    //     padding-left: 1rem;
-    //     padding-right: 1rem;
-
-    //     &-item {
-            
-    //         li{
-    //             margin-top: 20%;
-            
-    //         }
-
-    //     }
-    //     }
-    //     .references {
-    //         display: grid;
-    //         grid-template-columns: 60% 40%;
-         
-        
-    //         &__header {
-    //             margin-bottom: 1%;
-    //         }
-        
-    //         &__properties {
-    //             width: 100%;
-    //             margin-top: 24%;
-              
-                
-    //         }
-    //         &__filter {
-    //         width: 37%;
-    //          margin-right: -7px;       
-    //         }
-    //     }
-    // }        
-
-    // @include lg {
-    //    .posts {
-
-     
-
-    //     &__list {
-    //         display: grid;
-    //         grid-template-columns: repeat(2,1fr);
-    //         grid-gap: 70px;
-    //         margin: 0px auto;
-    //         width: 90%;
-        
-          
-           
-    //        &-item {
-    //         border:1px solid rgb(221, 191, 191);
-         
-           
-    //     }
-
-    //     &-item-about {
-
-    //     }
-           
-    //     }
-
-       
-
-        
-
-    //     &__separator {
-    //         display: none;
-    //     }
-    //     h3 {
-    //         margin: 5% 0% 4% 5%;
-    //     }
-    //    }
-       
-    // }
-
+@include mobile_m {
+.nav__showed {
+    display: none;
+}
+.fContainer__nav__showed {
+    display: none;
+}
+}
+@include mobile_l {
   
-
-    // @include xl {
-
-    // }
-    // // ======================================================= MEDIA QUERIES ================================================//
+}
 
 
  @include tablet { 
@@ -773,10 +653,212 @@
         }
     }
  }
+  
+
+ }
+
+
+
+ @include laptop {
+    .fContainer {
+        
+
+        &__social {
+           
+
+
+            &-icons {
+
+            }
+
+            &-logo {
+
+
+            }
+        }
+
+        &__navigation {
+            border: none;
+
+            ul {
+                
+
+                li {
+
+
+                }
+            }
+        }
+
+        &__end {
+            border: none;
+            display: inline-flex;
+            margin-left: 30%;
+            margin-top: 10%;
+            &-privacy {
+
+
+            }
+        }
+      
+    }
+
+    .menu-btn {
+        display: none;
+        align-items: center;
+    }
+
+    
+ .nav__showed {
+   display: flex;
+   margin-left: 27%;
+   
+ 
+  
+    
+    &__items {
+   
+        
+        li {
+            list-style-type: none;
+            color: #fff;
+            padding: 11px 67px 12px 0px;
+            font-size: 16px;
+            text-align: left;
+            
+            i {
+                text-decoration: none;
+                color: #fff;
+               
+            }
+        }
+      
+    }
  }
 
 
+    // ========================= header ===============//
+ header {
+    height: 13vh;
+ }
 
- @include laptop_l {
+  // ========================= MiDSection==================//
+
+.midSection {
+
+  
+    &__container {
+position: relative;
+
+
+    }
+
+    &__img {
+        border: 10px solid red;
+        z-index: 2;
+    }
+
+    &__company {
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+    height: 50%;
+    width: 50%;
+    background: $primary-color;
+    z-index: 3;
+        &-desc {
+            z-index: 3;
+
+        }
+    }
+
+
+
+}
+   // ========================= END ofMiDSection==================//
+
+
+ 
+ // ========================= references ==================//
+
+
+    .references {
+
+       
+    h1 {
+        color: #fff;
+        font-family: 'paralucent';
+        letter-spacing: 4px;
+        font-weight: 600;
+        font-size: 37px;
+    }
+    &__header {
+        
+
+
+        &-items {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin: 7% -2% -5% -1%;
+
+        ::placeholder {
+            padding: 60px;
+        }
+
+
+        &-properties {
+        margin: 0;
+        }
+        }
+    }
+ }
+
+
+ //=============================== fContainer====== FOOTER=======================//
+
+ .fContainer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100px;
+    
+
+&__social {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+
+    &-logo {
+        padding: 25px 0px 0px 0px;
+    }
+    &-icons {
+        padding:  107px 0px 0px 0px;
+    }
+    
+}
+&__navigation {
+    display: none;
+}
+&__nav__showed {
+    display: flex;
+    margin-top: 7%;
+    margin-left: 10%;
+
+    
+
+  
+}
+.nav__showed__items {
+    li {
+        color: #151515;
+        padding: 8px 47px 4px 10px;
+
+        i {
+            color: #151515;
+        }
+    }
+}
 
  }
+ 
+
+}

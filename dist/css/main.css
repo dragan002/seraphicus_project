@@ -368,6 +368,14 @@ header {
   width: 95%;
 }
 
+@media (min-width: 0px) {
+  .nav__showed {
+    display: none;
+  }
+  .fContainer__nav__showed {
+    display: none;
+  }
+}
 @media (min-width: 425px) {
   .posts__separator {
     display: none;
@@ -392,5 +400,109 @@ header {
   }
   .fContainer__navigation ul li {
     margin-left: 15%;
+  }
+}
+@media (min-width: 768px) {
+  .fContainer__navigation {
+    border: none;
+  }
+  .fContainer__end {
+    border: none;
+    display: inline-flex;
+    margin-left: 30%;
+    margin-top: 10%;
+  }
+  .menu-btn {
+    display: none;
+    align-items: center;
+  }
+  .nav__showed {
+    display: flex;
+    margin-left: 27%;
+  }
+  .nav__showed__items li {
+    list-style-type: none;
+    color: #fff;
+    padding: 11px 67px 12px 0px;
+    font-size: 16px;
+    text-align: left;
+  }
+  .nav__showed__items li i {
+    text-decoration: none;
+    color: #fff;
+  }
+  header {
+    height: 13vh;
+  }
+  .midSection__container {
+    position: relative;
+  }
+  .midSection__img {
+    border: 10px solid red;
+    z-index: 2;
+  }
+  .midSection__company {
+    position: absolute;
+    bottom: 20px;
+    left: 200px;
+    height: 50%;
+    width: 50%;
+    background: #1d4138;
+    z-index: 3;
+  }
+  .midSection__company-desc {
+    z-index: 3;
+  }
+  .references h1 {
+    color: #fff;
+    font-family: "paralucent";
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 37px;
+  }
+  .references__header-items {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin: 7% -2% -5% -1%;
+  }
+  .references__header-items ::-moz-placeholder {
+    padding: 60px;
+  }
+  .references__header-items ::placeholder {
+    padding: 60px;
+  }
+  .references__header-items-properties {
+    margin: 0;
+  }
+  .fContainer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100px;
+  }
+  .fContainer__social {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+  }
+  .fContainer__social-logo {
+    padding: 25px 0px 0px 0px;
+  }
+  .fContainer__social-icons {
+    padding: 107px 0px 0px 0px;
+  }
+  .fContainer__navigation {
+    display: none;
+  }
+  .fContainer__nav__showed {
+    display: flex;
+    margin-top: 7%;
+    margin-left: 10%;
+  }
+  .fContainer .nav__showed__items li {
+    color: #151515;
+    padding: 8px 47px 4px 10px;
+  }
+  .fContainer .nav__showed__items li i {
+    color: #151515;
   }
 }/*# sourceMappingURL=main.css.map */
