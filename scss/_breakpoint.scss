@@ -1,42 +1,50 @@
 $breakpoint: (
-    "xs": 0,
-    "sm": 480px,
-    "sms": 600px,
-    "md": 720px,
-    "lg": 960px,
-    "xl": 1200px
+    // "xs": 0,
+    // "mobile_m": 375px,
+    // "mobile_l": 425px,
+    // "tablet": 768px,
+    // "laptop": 1024px,
+    // "laptop_l": 1440px
+
+    "mobile_m": 0px,
+    "mobile_l": 375px,
+    "tablet": 425px,
+    "laptop": 768px,
+    "laptop_l": 1024px,
+    "laptop_xl":1440px
+
 );
 
-@mixin xs {
-    @media (min-width: map-get($breakpoint, "xs")) {
+
+@mixin mobile_m {
+    @media (min-width: map-get($breakpoint, "mobile_m")) {
+        @content;
+    }
+}
+@mixin mobile_l {
+    @media (min-width: map-get($breakpoint, "mobile_l")) {
         @content;
     }
 }
 
-@mixin sm {
-    @media (min-width: map-get($breakpoint, "sm")) {
-        @content;
-    }
-}
-@mixin sms {
-    @media (min-width: map-get($breakpoint, "sm")) {
+@mixin tablet {
+    @media (min-width: map-get($breakpoint, "tablet")) {
         @content;
     }
 }
 
-@mixin md {
-    @media (min-width: map-get($breakpoint, "md")) {
+@mixin laptop {
+    @media (min-width: map-get($breakpoint, "laptop")) {
         @content;
     }
 }
-
-@mixin lg {
-    @media (min-width: map-get($breakpoint, "lg")) {
+@mixin laptop_l {
+    @media (min-width: map-get($breakpoint, "laptop_l")) {
         @content;
     }
 }
-@mixin xl {
-    @media (min-width: map-get($breakpoint, "xl")) {
+@mixin laptop_xl {
+    @media (min-width: map-get($breakpoint, "laptop_l")) {
         @content;
     }
 }
