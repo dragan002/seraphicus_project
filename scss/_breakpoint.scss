@@ -11,7 +11,8 @@ $breakpoint: (
     "tablet": 425px,
     "laptop": 768px,
     "laptop_l": 1024px,
-    "laptop_xl":1440px
+    "laptop_xl":1440px,
+    "laptop_xxl":1920px
 
 );
 
@@ -44,7 +45,13 @@ $breakpoint: (
     }
 }
 @mixin laptop_xl {
-    @media (min-width: map-get($breakpoint, "laptop_l")) {
+    @media (min-width: map-get($breakpoint, "laptop_xl")) {
+        @content;
+    }
+}
+
+@mixin laptop_xxl {
+    @media (min-width: map-get($breakpoint, "laptop_xxl")) {
         @content;
     }
 }

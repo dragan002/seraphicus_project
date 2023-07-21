@@ -189,6 +189,7 @@ header {
 }
 .references__header-items-properties p {
   color: #fff;
+  padding: 0 0 0 0px;
 }
 .references__header-items-properties p span {
   color: #9f9b9b;
@@ -274,12 +275,17 @@ header {
   grid-template-rows: repeat(1, 1fr);
   background-color: #1d4138;
 }
+.midSection__content {
+  margin-left: 10%;
+  margin-top: 2%;
+}
 .midSection__img img {
   width: 100%;
 }
 .midSection__company {
   margin-left: 6%;
   margin-top: 7%;
+  height: 38vh;
 }
 .midSection__company-desc h1 {
   font-family: "paralucent";
@@ -291,9 +297,10 @@ header {
   margin-top: 5%;
   color: #fefefe;
   line-height: 25px;
+  font-size: 14px;
 }
 .midSection__company-btns {
-  margin-top: 11%;
+  margin-top: 6%;
 }
 .midSection__company-btns button {
   width: 90px;
@@ -311,7 +318,7 @@ header {
 
 .fContainer {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }
 .fContainer__social {
   display: grid;
@@ -348,7 +355,7 @@ header {
   grid-template-rows: repeat(2, 1fr);
   text-align: center;
   border-top: 1px solid rgb(221, 191, 191);
-  padding: 20px;
+  padding: 73px 0px 0px 157px;
 }
 .fContainer__end h4 {
   color: #bebebe;
@@ -373,6 +380,12 @@ header {
     display: none;
   }
   .fContainer__nav__showed {
+    display: none;
+  }
+  .midSection__company-btns2 {
+    display: none;
+  }
+  .fContainer__nav_showed {
     display: none;
   }
 }
@@ -403,14 +416,36 @@ header {
   }
 }
 @media (min-width: 768px) {
-  .fContainer__navigation {
-    border: none;
+  .fContainer {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100px;
   }
-  .fContainer__end {
-    border: none;
-    display: inline-flex;
-    margin-left: 30%;
-    margin-top: 10%;
+  .fContainer__social {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .fContainer__social-logo {
+    padding: 25px 0px 0px 0px;
+  }
+  .fContainer__social-icons {
+    padding: 116px 0px 0px 0px;
+  }
+  .fContainer__navigation {
+    display: none;
+  }
+  .fContainer__nav__showed {
+    display: flex;
+    margin-top: 2%;
+    margin-left: 10%;
+  }
+  .fContainer .nav__showed__items li {
+    color: #151515;
+    padding: 8px 47px 4px 10px;
+  }
+  .fContainer .nav__showed__items li i {
+    color: #151515;
   }
   .menu-btn {
     display: none;
@@ -420,11 +455,14 @@ header {
     display: flex;
     margin-left: 27%;
   }
+  .nav__showed__items {
+    padding: 0 23px 0 0;
+    font-size: 15px;
+  }
   .nav__showed__items li {
     list-style-type: none;
     color: #fff;
     padding: 11px 67px 12px 0px;
-    font-size: 16px;
     text-align: left;
   }
   .nav__showed__items li i {
@@ -434,75 +472,123 @@ header {
   header {
     height: 13vh;
   }
-  .midSection__container {
-    position: relative;
+}
+.references h1 {
+  color: #fff;
+  font-family: "paralucent";
+  letter-spacing: 4px;
+  font-weight: 600;
+  font-size: 37px;
+}
+.references__header-items {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  margin: 7% -2% -5% -1%;
+  font-size: 40px;
+}
+.references__header-items ::-moz-placeholder {
+  padding: 60px;
+}
+.references__header-items ::placeholder {
+  padding: 60px;
+}
+.references__header-items-properties {
+  margin: 0;
+}
+
+@media (min-width: 1920px) {
+  header {
+    height: 108px;
   }
-  .midSection__img {
-    border: 10px solid red;
-    z-index: 2;
+  .nav {
+    height: 108px;
   }
-  .midSection__company {
-    position: absolute;
-    bottom: 20px;
-    left: 200px;
-    height: 50%;
-    width: 50%;
-    background: #1d4138;
-    z-index: 3;
+  .navbar__logo {
+    margin-left: 10%;
+    margin-top: 1%;
   }
-  .midSection__company-desc {
-    z-index: 3;
+  .navbar__logo img {
+    width: 101px;
+    height: 46px;
   }
-  .references h1 {
-    color: #fff;
-    font-family: "paralucent";
-    letter-spacing: 4px;
-    font-weight: 600;
-    font-size: 37px;
+  .nav__showed {
+    margin: 0% 0% 0% 40%;
+  }
+  .nav__showed ul {
+    margin-top: 1%;
+  }
+  .nav__showed ul li {
+    font-size: 24px;
+  }
+  .references {
+    padding: 10% 11% 6% 23%;
+  }
+  .references__header h1 {
+    font-size: 56px;
   }
   .references__header-items {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    margin: 7% -2% -5% -1%;
+    margin: 4% 0% -5% -2%;
   }
-  .references__header-items ::-moz-placeholder {
-    padding: 60px;
-  }
-  .references__header-items ::placeholder {
-    padding: 60px;
+  .references__header-items-input span {
+    top: 31%;
+    left: 2%;
   }
   .references__header-items-properties {
-    margin: 0;
+    justify-content: start;
   }
-  .fContainer {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    height: 100px;
+  .posts {
+    padding: 0% 20% 0% 20%;
   }
-  .fContainer__social {
+  .posts h3 {
+    margin: 3% 0% 0% 2%;
+  }
+  .midSection__container {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    margin: 40px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
   }
-  .fContainer__social-logo {
-    padding: 25px 0px 0px 0px;
+  .midSection__img img {
+    max-width: 100%;
+    height: auto;
   }
-  .fContainer__social-icons {
-    padding: 107px 0px 0px 0px;
+  .midSection__content {
+    flex: 1;
+    max-width: 34%;
+    text-align: center;
+    padding: 20px;
+    margin-left: 34%;
+    position: absolute;
+    background: #122a24;
+    height: 70%;
   }
-  .fContainer__navigation {
+  .midSection__company-desc {
+    text-align: left;
+    padding: 40px;
+  }
+  .midSection__company-desc h1 {
+    font-size: 56px;
+  }
+  .midSection__company-desc p {
+    font-size: 16px;
+  }
+  .midSection__company-btns {
     display: none;
   }
-  .fContainer__nav__showed {
+  .midSection__company-btns2 {
     display: flex;
-    margin-top: 7%;
-    margin-left: 10%;
+    margin-top: 3%;
   }
-  .fContainer .nav__showed__items li {
-    color: #151515;
-    padding: 8px 47px 4px 10px;
-  }
-  .fContainer .nav__showed__items li i {
-    color: #151515;
+  .midSection__company-btns2 button {
+    width: 130px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background: #213933;
+    color: #fefefe;
+    margin-right: 10px;
+    margin-bottom: 8%;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=main.css.map */
