@@ -139,7 +139,7 @@ header {
   color: #fff;
   font-size: 32px;
   padding: 4% 4% 8% 1%;
-  letter-spacing: 2px;
+  letter-spacing: 20px;
 }
 .references__header-items-input {
   position: relative;
@@ -151,13 +151,15 @@ header {
   left: 4%;
 }
 .references__header-items-input input {
-  width: 98%;
+  width: 94%;
   height: 44px;
   border: 1px solid;
   border-radius: 50px;
   background-color: #122a24;
   border: 1px solid #213933;
   z-index: 1;
+  color: #fff;
+  font-size: 25px;
 }
 .references__header-items-input ::-moz-placeholder {
   color: #fff;
@@ -355,7 +357,7 @@ header {
   grid-template-rows: repeat(2, 1fr);
   text-align: center;
   border-top: 1px solid rgb(221, 191, 191);
-  padding: 73px 0px 0px 157px;
+  padding: 45px 0px 0px 150px;
 }
 .fContainer__end h4 {
   color: #bebebe;
@@ -430,7 +432,7 @@ header {
     padding: 25px 0px 0px 0px;
   }
   .fContainer__social-icons {
-    padding: 116px 0px 0px 0px;
+    padding: 92px 0px 0px 0px;
   }
   .fContainer__navigation {
     display: none;
@@ -456,7 +458,7 @@ header {
     margin-left: 27%;
   }
   .nav__showed__items {
-    padding: 0 23px 0 0;
+    padding: 0 0px 0 0;
     font-size: 15px;
   }
   .nav__showed__items li {
@@ -464,10 +466,16 @@ header {
     color: #fff;
     padding: 11px 67px 12px 0px;
     text-align: left;
+    cursor: pointer;
+    z-index: 3;
+    transition: all 0.5s ease-in-out;
   }
   .nav__showed__items li i {
     text-decoration: none;
     color: #fff;
+  }
+  .nav__showed__items li:hover {
+    color: rgb(218, 142, 1);
   }
   header {
     height: 13vh;
@@ -513,6 +521,9 @@ header {
   }
   .nav__showed {
     margin: 0% 0% 0% 40%;
+  }
+  .nav__showed__items {
+    padding: 0 0 0 150px;
   }
   .nav__showed ul {
     margin-top: 1%;
@@ -591,4 +602,12 @@ header {
     margin-bottom: 8%;
     font-size: 18px;
   }
+}
+button {
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+  color: #fff;
+  background-color: rgb(218, 142, 1);
 }/*# sourceMappingURL=main.css.map */
