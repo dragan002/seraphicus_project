@@ -156,23 +156,25 @@
     background-repeat: no-repeat;
     background-size: cover;
      background-position: center;
-    padding: 10% 6% 6% 6%;
+    padding: 17% 6% 6% 6%;
   
    
 
     &__header {
-      
-        &-items {
-            
-          
         h1 {
             font-family: 'paralucent';
             color: #fff;
             font-size: 32px;
-            padding: 4% 4% 8% 1%;
-            letter-spacing: 20px;
+            padding: 0% 0% 13% 1%;
+            letter-spacing: 4px;
+            font-weight: 900;
 
         }
+      
+        &-items {
+            
+          
+     
 
         &-input {
             position: relative;
@@ -185,7 +187,7 @@
             }
 
             input {
-                width: 94%;
+                width: 100%;
                 height: 44px;
                 border: 1px solid;
                 border-radius: 50px;
@@ -193,7 +195,8 @@
                 border: 1px solid #213933;
                 z-index: 1;
                 color: #fff;
-                font-size: 25px;
+                font-size: 15px;
+                padding: 0 0 0 3px;
                 
             }
             ::placeholder {
@@ -324,7 +327,14 @@
             }
         }
     }
+} 
+
+#result {
+    padding: 32px 0 20px 31px;
+    color: #bebebe;
+    font-family: 'paralucent';
 }
+
 .references__more-btn {
     width: 110px;
     height: 44px;
@@ -539,9 +549,7 @@
             display: flex;
             flex-direction: column;
         }
-        h1 {
-            font-size: 300px;
-        }
+     
     }
   }
 }
@@ -570,22 +578,54 @@
             }
         }
     }
-
-  
  }
  
  .fContainer__end {
     border: none; 
     
  }
-  
-
  }
 
 
 
  @include laptop {
+
+    .references {
+        padding: 8% 4% 0% 6%;
+       
+
+        &__header {
+            padding: 0px 0 23px 0;
+         
+          
+            h1 {
+                padding: 0 0 0 0;
+            }
+           
+            &-items {
+                display: flex;
+            flex-direction: row;
+          
+            align-items: center;
+            padding: 25px 0 0 0;
+
+            &-properties {
+                margin-top: 0;
+                padding: 0 0 0 16px;
+            }   
+
+            &-input {
+                width: 70%;
+                padding: 0px 0 0 0;
+            }
+            }
+        }
+     }
+
+
+
       .posts {
+   
 
         &__separator {
             display: none;
@@ -738,8 +778,61 @@
   .midSection {
  
   }
-
 }
+
+@include laptop_l {
+
+    #result {
+        padding: 34px 0px 30px 100px;
+    }
+    .posts {
+
+        &__list {
+       padding: 0px 100px 0 100px;
+        }
+     
+    }
+    .references {
+       
+
+        &__header {
+            h1 {
+                padding: 0 0 21px 0;
+                font-size: 60px;
+            }
+
+            &-items {
+                padding: 0 0 0 0;
+
+                ::placeholder {
+                    padding: 60px;
+                }
+
+                &-input {
+                    padding:  0 0 0 0;
+                    width: 76%;
+                    
+                }
+
+                &-properties {
+                   padding: 0 0 0 20px;
+                  
+                }
+            }
+        }
+    }
+    .nav {
+        &bar__logo {
+            padding: 0 0 0 0;
+        }
+    }
+}
+
+
+// lomi se na 1024px //
+
+
+
    // ========================= END ofMiDSection==================//
 
 
@@ -747,37 +840,40 @@
  // ========================= references ==================//
 
 
-    .references {
+//     .references {
 
        
-    h1 {
-        color: #fff;
-        font-family: 'paralucent';
-        letter-spacing: 4px;
-        font-weight: 600;
-        font-size: 37px;
-    }
-    &__header {
-        
+//     h1 {
+//         color: #fff;
+//         font-family: 'paralucent';
+//         letter-spacing: 4px;
+//         font-weight: 600;
+//         font-size: 37px;
+//     }
+//     &__header {
+//         &-items {
+//         display: grid;
+//         grid-template-columns: 70% 35%;
+//         margin: 7% -0% -5% 0%;
+
+//         &-input {
+          
+           
+//         }
+
+//         ::placeholder {
+//             padding: 60px;
+//         }
 
 
-        &-items {
-        display: grid;
-        grid-template-columns: 70% 30%;
-        margin: 7% -2% -5% -1%;
-        font-size: 40px;
+//         &-properties {
+//         padding: 0 0 0 0px;
 
-        ::placeholder {
-            padding: 60px;
-        }
-
-
-        &-properties {
-        margin: 0;
-        }
-        }
-    }
- }
+       
+//         }
+//         }
+//     }
+//  }
 
 
  //=============================== fContainer====== FOOTER=======================//
@@ -786,6 +882,9 @@
  
 //==================================laptop xxl =====================//
 @include laptop_xxl {
+    
+
+    
     .fContainer__end {
         padding: 35px 0px 30px 591px;
         
@@ -830,6 +929,7 @@
 .references {
     padding: 10% 11% 6% 23%;
     &__header {
+        
         
 
         h1 {
