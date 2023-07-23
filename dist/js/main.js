@@ -32,3 +32,22 @@ function toggleMenu() {
 
 
 
+
+document.getElementById('seeMoreBtn').addEventListener('click', function() {
+    const hiddenPost1 = document.getElementById('hiddenPost1');
+    const hiddenPost2 = document.getElementById('hiddenPost2');
+    const seeMoreButton = document.getElementById('seeMoreBtn');
+
+    
+    if (hiddenPost1.style.display === 'none') {
+        hiddenPost1.style.display = 'block';
+        hiddenPost2.style.display = 'block';
+        seeMoreButton.textContent = '- See Less';
+    } else {
+        hiddenPost1.style.display = 'none';
+        hiddenPost2.style.display = 'none';
+        seeMoreButton.textContent = '+ See More';
+    }
+});
+
+
