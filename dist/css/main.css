@@ -78,6 +78,7 @@ header {
   z-index: 2;
 }
 .navbar__logo {
+  margin-top: 20px;
   visibility: visible;
   margin-left: 1rem;
   margin-top: 0.625rem;
@@ -176,6 +177,7 @@ header {
   align-items: center;
   margin-top: 5%;
   font-size: 14px;
+  cursor: pointer;
 }
 .references__header-items-properties button {
   height: 44px;
@@ -391,7 +393,38 @@ header {
     display: none;
   }
 }
+@media (min-width: 375px) {
+  .fContainer__end {
+    padding: 45px 0px 0px 0px;
+  }
+  .references__header {
+    display: flex;
+    flex-direction: column;
+  }
+  .references__header-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .references__header h1 {
+    font-size: 300px;
+  }
+}
 @media (min-width: 425px) {
+  .see_more {
+    width: 50%;
+    padding: 60px;
+  }
+  .see_more .references__more-btn {
+    margin: 0 100%;
+  }
+  .fContainer__navigation ul li {
+    margin-left: 15%;
+  }
+  .fContainer__end {
+    border: none;
+  }
+}
+@media (min-width: 768px) {
   .posts__separator {
     display: none;
   }
@@ -403,25 +436,38 @@ header {
     align-items: center;
   }
   .posts__list-item {
-    border: 1px solid rgb(221, 191, 191);
+    border: 1px solid rgba(217, 217, 217, 0.5);
     padding: 30px;
+    font-family: "paralucent";
+    color: #000000;
+    letter-spacing: 2px;
+    line-height: 1;
   }
-  .see_more {
-    width: 50%;
-    padding: 60px;
+  .posts__list #post_line {
+    border: 1px solid rgba(217, 217, 217, 0.5);
   }
-  .see_more .references__more-btn {
-    margin: 0 100%;
-  }
-  .fContainer__navigation ul li {
-    margin-left: 15%;
-  }
-}
-@media (min-width: 768px) {
   .fContainer {
     display: grid;
     grid-template-columns: 30% 70%;
-    height: 100px;
+    height: 140px;
+    margin-top: 3%;
+  }
+  .fContainer__navigation {
+    border: none;
+  }
+  .fContainer__end {
+    padding: 40px;
+    display: flex;
+    font-size: 16px;
+    width: 63%;
+    margin-left: 37%;
+    padding: 36px 0 0 0;
+  }
+  .fContainer__end h1 {
+    font-size: 16px;
+  }
+  .fContainer__end-privacy p {
+    font-size: 16px;
   }
   .fContainer__social {
     display: flex;
@@ -432,36 +478,37 @@ header {
     padding: 25px 0px 0px 0px;
   }
   .fContainer__social-icons {
-    padding: 92px 0px 0px 0px;
+    padding: 102px 0px 0px 0px;
   }
-  .fContainer__navigation {
+  .fContainer__social__navigation {
     display: none;
   }
-  .fContainer__nav__showed {
+  .fContainer__social__nav__showed {
     display: flex;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 10%;
   }
-  .fContainer .nav__showed__items li {
+  .fContainer__social .nav__showed__items li {
     color: #151515;
     padding: 8px 47px 4px 10px;
+    font-size: 22px;
   }
-  .fContainer .nav__showed__items li i {
+  .fContainer__social .nav__showed__items li i {
     color: #151515;
   }
-  .menu-btn {
+  .fContainer .menu-btn {
     display: none;
     align-items: center;
   }
-  .nav__showed {
+  .fContainer .nav__showed {
     display: flex;
     margin-left: 27%;
   }
-  .nav__showed__items {
+  .fContainer .nav__showed__items {
     padding: 0 0px 0 0;
     font-size: 15px;
   }
-  .nav__showed__items li {
+  .fContainer .nav__showed__items li {
     list-style-type: none;
     color: #fff;
     padding: 11px 67px 12px 0px;
@@ -470,11 +517,11 @@ header {
     z-index: 3;
     transition: all 0.5s ease-in-out;
   }
-  .nav__showed__items li i {
+  .fContainer .nav__showed__items li i {
     text-decoration: none;
     color: #fff;
   }
-  .nav__showed__items li:hover {
+  .fContainer .nav__showed__items li:hover {
     color: rgb(218, 142, 1);
   }
   header {
@@ -505,31 +552,35 @@ header {
 }
 
 @media (min-width: 1920px) {
-  header {
-    height: 108px;
+  .fContainer__end {
+    padding: 35px 0px 30px 591px;
   }
   .nav {
     height: 108px;
   }
   .navbar__logo {
-    margin-left: 10%;
-    margin-top: 1%;
+    width: 10%;
+    margin-left: 22%;
+    margin-top: 3%;
   }
   .navbar__logo img {
     width: 101px;
     height: 46px;
   }
   .nav__showed {
-    margin: 0% 0% 0% 40%;
+    margin: 0% 0% 0% 33%;
   }
   .nav__showed__items {
-    padding: 0 0 0 150px;
+    padding: 0 0 0 50px;
   }
   .nav__showed ul {
-    margin-top: 1%;
+    margin-top: 2%;
   }
   .nav__showed ul li {
     font-size: 24px;
+  }
+  .nav__showed p {
+    margin: 33px 0 0 70px;
   }
   .references {
     padding: 10% 11% 6% 23%;
@@ -545,7 +596,8 @@ header {
     left: 2%;
   }
   .references__header-items-properties {
-    justify-content: start;
+    font-size: 18px;
+    margin: 0px 170px 0px -30px;
   }
   .posts {
     padding: 0% 20% 0% 20%;
